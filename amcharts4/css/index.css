@@ -1,0 +1,27 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: #ffffff;
+/*  overflow: hidden;*/
+  margin: 0;
+}
+/* PEQUEÑO */
+#chartdiv4_1, #chartdiv4_2,  #chartdiv4, #chartdiv4_u, #chartdiv4_u2, .chartdiv, .chardiv {
+  width: 100%;
+  max-height: 400px;
+  height: 100vh;
+}
+
+/* GRANDE */
+.chartdiv_g {
+  width: 100%;
+  max-height: 700px;
+  height: 100vh;
+}
+
+/* GRANDE */
+.chartdiv_p {
+  width: 100%;
+  max-height: 300px;
+  height: 100vh;
+}
+
