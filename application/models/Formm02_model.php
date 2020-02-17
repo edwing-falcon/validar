@@ -129,6 +129,8 @@ class Formm02_model extends CI_Model {
             return 0;
         }
     }
+
+
     
     public function getRecepcion($idM02recepcion, $compradorM02Recepcion, $vendedorM02Recepcion, $inicio = FALSE, $cantidadregistro = FALSE){
         $idM02recepcion = trim($idM02recepcion);
@@ -223,6 +225,21 @@ class Formm02_model extends CI_Model {
         $consulta = $this->db->query($sql);
         return $consulta->result();
     }
+
+    // ********** envio
+    public function getenvio($comprador){     
+        $this->db->select("codigooperador, codigoformm02, oficinavalidacion, f.id as id, o.nombre as comprador, razonsocialvendedor, fecharegistro, fechatransaccion, totalkilosfinos, totalvbvbs, oficinavalidacion ");
+        $this->db->from("formm02 f");
+        $this->db->join("operador o", "o.id = f.idcomprador");
+        $this->db->where("f.estado", 0);
+        $this->db->where('o.id', $comprador);
+        $this->db->order_by('f.id', 'desc');
+    
+        $consulta = $this->db->get();
+        return $consulta->result();
+    }
+
+    
                                          
     public function getDeclaradosDetalle($nim, $idM02DeclaradoDetalle, $vendedorM02DeclaradoDetalle, $inicio = FALSE, $cantidadregistro = FALSE){
         $nim = trim($nim);

@@ -51,7 +51,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $route['default_controller'] = 'C_inicio';
 
-$route['C_buscarDeposito/pagina/(:num)'] = 'C_buscarDeposito/index/$1';
+/*$route['C_buscarDeposito/pagina/(:num)'] = 'C_buscarDeposito/index/$1';
 $route['C_buscarDeposito'] = "C_buscarDeposito";
 
 $route['C_buscarDepositoM01/pagina/(:num)'] = 'C_buscarDepositoM01/index/$1';
@@ -179,3 +179,4 @@ $route['C_frontera'] = "C_frontera";
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+*/

@@ -75,17 +75,17 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => '10.0.0.13',
+	/*'hostname' => '10.0.0.13',
         'username' => 'postgres',
-        'password' => 'postgresql8',
+        'password' => 'postgresql8',*/
         
         /*'hostname' => '192.168.242.57',
         'username' => 'postgres',
 	'password' => 'postgresql9',*/
     
-        /*'hostname' => 'localhost',
+        'hostname' => 'localhost',
         'username' => 'postgres',
-        'password' => 'postgres',*/
+        'password' => 'postgresql8',
     
 	'database' => 'sinacom',
 	'dbdriver' => 'postgre',
